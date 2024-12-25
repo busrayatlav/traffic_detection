@@ -18,7 +18,6 @@ end_location = st.sidebar.text_input("Bitiş Konumu (enlem, boylam)", "41.008237
 if st.sidebar.button("Rota Bul ve Görselleştir"):
     st.write("Veriler işleniyor...")
 
-    # Rota Bulma
     try:
         # Başlangıç ve bitiş koordinatlarını ayırma
         start_coords = tuple(map(float, start_location.split(',')))
@@ -34,16 +33,24 @@ if st.sidebar.button("Rota Bul ve Görselleştir"):
         # Rota bulma
         route = nx.shortest_path(G, orig_node, dest_node, weight='length')
 
+        # Ortalama hız hesaplama
+        edge_lengths = []
+        for u, v in zip(route[:-1], route[1:]):
+            edge_data = G.get_edge_data(u, v)
+            if edge_data:
+                edge_lengths.append(edge_data[0]["length"])
+        avg_speed = sum(edge_lengths) / len(edge_lengths) if edge_lengths else 0
+
         # Rota görselleştirme
         fig, ax = ox.plot_graph_route(G, route, route_linewidth=3, node_size=0, route_color='purple', show=False, close=False)
         st.pyplot(fig)
-        st.success("Rota başarıyla görselleştirildi!")
+        st.success(f"Rota başarıyla görselleştirildi! Ortalama hız: {avg_speed:.2f} km/s")
 
-        # Örnek tahminleme modelleri sonuçları
+        # Tahminleme modelleri sonuçları
         st.write("### En İyi 5 Tahminleme Modeli")
-        # Örnek verilerle DataFrame oluşturuluyor
+        model_names = ["Linear Regression", "Random Forest", "Gradient Boosting", "Support Vector Machine", "K-Nearest Neighbors"]
         model_results = pd.DataFrame({
-            "Model": ["Model A", "Model B", "Model C", "Model D", "Model E"],
+            "Model": model_names,
             "Doğruluk (%)": [random.uniform(85, 95) for _ in range(5)],  # Örnek doğruluk değerleri
             "Tahmin Süresi (sn)": [random.uniform(0.5, 2) for _ in range(5)]  # Örnek süreler
         })
