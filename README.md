@@ -86,7 +86,7 @@ streamlit run app.py
 ```
 
 ## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License.
 
 ## Acknowledgments
 Special thanks to the Berlin Municipality and data providers like Open-Meteo, BVG, and OpenRouteService for making this project possible.
