@@ -59,16 +59,13 @@ pip install -r requirements.txt
 ## Visualization Examples
 
 ### Traffic Clustering
-Using K-Means clustering to identify traffic patterns:
-![Clustering Example](clustering_example.png)
+Using K-Means clustering to identify traffic patterns.
 
 ### Road Network Visualization
-Berlin road network with optimized routes:
-![Road Network Example](road_network.png)
+Berlin road network with optimized routes.
 
 ### Model Comparison
-Performance comparison of models based on MSE and R² scores:
-![Model Comparison](model_comparison.png)
+Performance comparison of models based on MSE and R² scores.
 
 ## How to Use
 1. Clone this repository:
