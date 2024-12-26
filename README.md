@@ -65,8 +65,7 @@ Using K-Means clustering to identify traffic patterns.
 
 ### Road Network Visualization
 Berlin road network with optimized routes.
-
-![image](https://github.com/user-attachments/assets/558dfbaa-c37b-4eb1-b7bb-93384c18f3fb)
+<img src="https://github.com/user-attachments/assets/558dfbaa-c37b-4eb1-b7bb-93384c18f3fb" alt="Image Description" width="50">
 
 ### Model Comparison
 Performance comparison of models based on MSE and R² scores.
