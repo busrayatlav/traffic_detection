@@ -61,19 +61,19 @@ pip install -r requirements.txt
 ### Traffic Clustering
 Using K-Means clustering to identify traffic patterns.
 
-<img src="https://github.com/user-attachments/assets/b90276d5-a18a-4553-bc71-099ef5a8cc48" alt="Image Description" width="200">
+<img src="https://github.com/user-attachments/assets/b90276d5-a18a-4553-bc71-099ef5a8cc48" alt="Image Description" width="300">
 
 
 ### Road Network Visualization
 Berlin road network with optimized routes.
 
-<img src="https://github.com/user-attachments/assets/558dfbaa-c37b-4eb1-b7bb-93384c18f3fb" alt="Image Description" width="200">
+<img src="https://github.com/user-attachments/assets/558dfbaa-c37b-4eb1-b7bb-93384c18f3fb" alt="Image Description" width="300">
 
 ### Model Comparison
 Performance comparison of models based on MSE and R² scores.
 
-<img src="https://github.com/user-attachments/assets/2b228255-8b8a-4db1-a7e7-f139e7e598cb" alt="Image 1" width="200">
-<img src="https://github.com/user-attachments/assets/9edf40c5-1482-4546-8940-94366dde6db7" alt="Image 2" width="200">
+<img src="https://github.com/user-attachments/assets/2b228255-8b8a-4db1-a7e7-f139e7e598cb" alt="Image 1" width="300">
+<img src="https://github.com/user-attachments/assets/9edf40c5-1482-4546-8940-94366dde6db7" alt="Image 2" width="300">
 
 ## How to Use
 1. Clone this repository:
