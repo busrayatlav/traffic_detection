@@ -60,6 +60,8 @@ pip install -r requirements.txt
 
 ### Traffic Clustering
 Using K-Means clustering to identify traffic patterns.
+![image](https://github.com/user-attachments/assets/b90276d5-a18a-4553-bc71-099ef5a8cc48)
+
 
 ### Road Network Visualization
 Berlin road network with optimized routes.
